@@ -24,6 +24,7 @@
   "homepage": "https://github.com/nonbili/emoji-list#readme",
   "scripts": {
     "build": "tsc -d",
+    "build:demo": "parcel build --public-url . example/index.html",
     "release": "rm -rf dist && npm run build && npm publish --access public",
     "start": "parcel example/index.html"
   },
