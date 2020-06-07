@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Demo of &lt;emoji-list&gt;</title>
+  </head>
+  <body>
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+      input {
+        margin-bottom: 2rem;
+        padding: 0.5rem;
+      }
+      emoji-list {
+        height: 60vh;
+        overflow-y: auto;
+        border: 1px solid gray;
+        padding: 0.5rem;
+        --emoji-hover-bg: lightgreen;
+      }
+      emoji-list::part(category) {
+        color: dimgray;
+      }
+    </style>
+    <input type="search" autofocus placeholder="Search emoji" />
+    <emoji-list></emoji-list>
+    <div style="margin-top: 2rem; padding: 0.5rem; border: 1px solid gray;">
+      Selected: <span id="emoji" style="font-size: 1.5rem;"></span>
+    </div>
+    <script src="./example.ts"></script>
+    <script src="../src/emoji-list.ts"></script>
+  </body>
+</html>

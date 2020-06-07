@@ -1,0 +1,11 @@
+{
+  "name": "gen-emoji-list",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "node main.js"
+  },
+  "dependencies": {
+    "emojilib": "^2.4.0"
+  }
+}

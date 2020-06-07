@@ -1,0 +1,33 @@
+{
+  "name": "@nonbili/emoji-list",
+  "version": "0.1.0",
+  "description": "A web component to render a list of emoji",
+  "main": "src/emoji-list.js",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nonbili/emoji-list.git"
+  },
+  "keywords": [
+    "emoji",
+    "emoji list",
+    "custom element",
+    "web component"
+  ],
+  "author": "Ping Chen",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/nonbili/emoji-list/issues"
+  },
+  "homepage": "https://github.com/nonbili/emoji-list#readme",
+  "scripts": {
+    "build": "tsc -d",
+    "release": "rm -rf dist && npm run build && npm publish --access public",
+    "start": "parcel example/index.html"
+  },
+  "devDependencies": {
+    "typescript": "^3.8.2"
+  }
+}
