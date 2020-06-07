@@ -1,6 +1,6 @@
 {
   "name": "@nonbili/emoji-list",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A web component to render a list of emoji",
   "main": "src/emoji-list.js",
   "files": [
